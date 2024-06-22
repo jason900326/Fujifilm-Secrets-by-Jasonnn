@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>照片編輯</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="upload-container" id="upload-container">
+    <h1>Fujifilm Secrets by Jasonnn</h1>
+    <button id="select-file-button" class="btn-primary">選擇檔案</button>
+    <input type="file" id="upload" accept="image/*" style="display: none;">
+  </div>
+  <div id="editor-container" style="display: none;">
+    <div class="sidebar">
+      <div class="filter-previews">
+        <div class="filter" data-filter="Acros">
+          <img src="Fujifilm Secrets by Jasonnn/Acros.jpg" alt="Acros">
+          <span>Acros</span>
+        </div>
+        <div class="filter" data-filter="Astia">
+          <img src="Fujifilm Secrets by Jasonnn/Astia.jpg" alt="Astia">
+          <span>Astia</span>
+        </div>
+        <div class="filter" data-filter="Bleach-Bypass">
+          <img src="Fujifilm Secrets by Jasonnn/Bleach-Bypass.jpg" alt="Bleach Bypass">
+          <span>Bleach Bypass</span>
+        </div>
+        <div class="filter" data-filter="Classic-Chrome">
+          <img src="Fujifilm Secrets by Jasonnn/Classic-Chrome.jpg" alt="Classic Chrome">
+          <span>Classic Chrome</span>
+        </div>
+        <div class="filter" data-filter="Classic-Negative">
+          <img src="Fujifilm Secrets by Jasonnn/Classic-Negative.jpg" alt="Classic Negative">
+          <span>Classic Negative</span>
+        </div>
+        <div class="filter" data-filter="Eterna">
+          <img src="Fujifilm Secrets by Jasonnn/Eterna.jpg" alt="Eterna">
+          <span>Eterna</span>
+        </div>
+        <div class="filter" data-filter="Pro-Neg-Hi">
+          <img src="Fujifilm Secrets by Jasonnn/Pro-Neg-Hi.jpg" alt="Pro Neg Hi">
+          <span>Pro Neg Hi</span>
+        </div>
+        <div class="filter" data-filter="Pro-Neg-Std">
+          <img src="Fujifilm Secrets by Jasonnn/Pro-Neg-Std.jpg" alt="Pro Neg Std">
+          <span>Pro Neg Std</span>
+        </div>
+        <div class="filter" data-filter="Provia">
+          <img src="Fujifilm Secrets by Jasonnn/Provia.jpg" alt="Provia">
+          <span>Provia</span>
+        </div>
+        <div class="filter" data-filter="Velvia">
+          <img src="Fujifilm Secrets by Jasonnn/Velvia.jpg" alt="Velvia">
+          <span>Velvia</span>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div id="photo-container" class="photo-container">
+        <canvas id="photo-canvas"></canvas>
+      </div>
+      <div class="controls-container">
+        <div class="controls">
+          <div class="button-group">
+            <button id="select-file-button-top" class="btn-primary">選擇檔案</button>
+            <button id="download" class="btn-secondary" style="display: none;">下載圖片</button>
+            <label for="filter-strength" style="display: none;">濾鏡強度</label>
+            <input type="range" id="filter-strength" min="0" max="200" value="100" style="display: none;">
+            <button id="reset" class="btn-secondary" style="display: none;">重置</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
